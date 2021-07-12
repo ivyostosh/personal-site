@@ -1,16 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Validates the first half of an email address.
-const validateText = (text) => {
-  // NOTE: Passes RFC 5322 but not tested on google's standard.
-  // eslint-disable-next-line no-useless-escape
-  const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
-  return re.test(text) || text.length === 0;
-};
+const validateText = (text) => !text.includes('ᐠ.ꞈ.ᐟ');
 
 const messages = [
-  'ivyostosh',
-  'ivyjin215',
+  '你好',
+  'Hola',
+  '今日は',
+  '안녕하세요',
+  'Bonjour',
+  'Hallo',
+  'Ciao',
+  'Salve',
+  'नमस्ते',
+  'ᐊᐃᓐᖓᐃ',
+  'γεια σας',
+  '/ᐠ.ꞈ.ᐟ\\',
+  'Hello',
 ];
 
 const useInterval = (callback, delay) => {
@@ -59,13 +65,13 @@ const EmailLink = () => {
   return (
     <div
       className="inline-container"
-      style={validateText(message) ? {} : { color: 'red' }}
+      style={validateText(message) ? {} : { color: 'blue', style: 'font-weight: bolder' }}
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}@gmail.com` : ''}>
+      <a href={validateText(message) ? 'mailto:ivyjin215@gmail.com' : ''}>
         <span>{message}</span>
-        <span>@gmail.com</span>
+        <span>!</span>
       </a>
     </div>
   );

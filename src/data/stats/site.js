@@ -1,43 +1,45 @@
-import dayjs from 'dayjs';
+import React, { useState, useEffect } from 'react';
+// import dayjs from 'dayjs';
+
+const Age = () => {
+  const [age, setAge] = useState();
+
+  const tick = () => {
+    // const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
+    const divisor = 1000 * 60 * 60 * 24;
+    const birthTime = new Date('2021-07-10T09:24:00');
+    setAge(((Date.now() - birthTime) / divisor).toFixed(11));
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => tick(), 25);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  return <>{age}</>;
+};
 
 /* Keys match keys returned by the github api. Fields without keys are
  * mostly jokes. To see everything returned by the github api, run:
  curl https://api.github.com/repos/mldangelo/personal-site
  */
 const data = [
+  // {
+  //   label: 'Last updated at',
+  //   key: 'pushed_at',
+  //   link: 'https://github.com/mldangelo/personal-site/commits',
+  //   format: (x) => dayjs(x).format('MMMM DD, YYYY'),
+  // },
   {
-    label: 'Stars this repository has on github',
-    key: 'stargazers_count',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
-  },
-  {
-    label: 'Number of people watching this repository',
-    key: 'subscribers_count',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
-  },
-  {
-    label: 'Number of forks',
-    key: 'forks',
-    link: 'https://github.com/mldangelo/personal-site/network',
-  },
-  {
-    label: 'Number of spoons',
-    value: '0',
-  },
-  {
-    label: 'Number of linter warnings',
-    value: '0', // enforced via github workflow
-  },
-  {
-    label: 'Open github issues',
-    key: 'open_issues_count',
-    link: 'https://github.com/mldangelo/personal-site/issues',
+    key: 'live days',
+    label: 'live days',
+    value: <Age />,
   },
   {
     label: 'Last updated at',
-    key: 'pushed_at',
-    link: 'https://github.com/mldangelo/personal-site/commits',
-    format: (x) => dayjs(x).format('MMMM DD, YYYY'),
+    key: 'last updated at',
+    value: '2021-07-11',
   },
   {
     // TODO update this with a pre-commit hook
@@ -45,7 +47,13 @@ const data = [
     xargs -I file cat file | wc -l */
     label: 'Lines of Javascript powering this website',
     value: '2115',
-    link: 'https://github.com/mldangelo/personal-site/graphs/contributors',
+    // link: 'https://github.com/mldangelo/personal-site/graphs/contributors',
+  },
+  {
+    label: 'Credit to',
+    key: 'credit to',
+    value: "Michael D'Angelo",
+    link: 'https://github.com/mldangelo/personal-site',
   },
 ];
 
