@@ -23,6 +23,11 @@ const skills = [
     category: ['Languages'],
   },
   {
+    title: 'VB',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
     title: 'Numpy + Pandas',
     competency: 4,
     category: ['Data Engineering'],
@@ -99,6 +104,11 @@ const skills = [
   },
   {
     title: 'Git (Github)',
+    competency: 3,
+    category: ['Tools'],
+  },
+  {
+    title: 'Postman',
     competency: 3,
     category: ['Tools'],
   },

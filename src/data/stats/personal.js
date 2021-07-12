@@ -39,13 +39,6 @@ const data = [
       'https://www.google.com/maps/place/Huzhou,+Zhejiang,+China',
   },
   {
-    key: 'national parks',
-    label: 'National Parks Visited',
-    value: 8,
-    link:
-      'https://www.google.com/maps/d/u/0/edit?mid=178pZruVTkQPKg3Pbo7tkZnXrnS1YiHkt&ll',
-  },
-  {
     key: 'languages',
     label: 'Languages',
     value: 'Chinese, English',
@@ -54,6 +47,13 @@ const data = [
     key: 'real languages',
     label: 'Real Languages',
     value: 'Python, Java, Go, C++, SQL, JS',
+  },
+  {
+    key: 'national parks',
+    label: 'National Parks Visited',
+    value: 8,
+    link:
+      'https://www.google.com/maps/d/u/0/edit?mid=178pZruVTkQPKg3Pbo7tkZnXrnS1YiHkt&ll',
   },
 ];
 

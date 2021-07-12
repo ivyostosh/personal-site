@@ -20,7 +20,7 @@ but I have the dedication, passion, and confidence to build a good piece of soft
 
 # Currently
 
-I currently work at Google as a Revenue System Analyst.
+I currently work at Google as a Revenue Systems Analyst.
 My main work is to develop revenue infrastructure work for Google Ads incentives programs.
 I mainly use Google SQL, Plx Workflow, and Blaze BUILD for my work, but also find opportunities to do more work in Python, Pandas, Java and ML.
 

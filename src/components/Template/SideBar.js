@@ -26,7 +26,7 @@ const SideBar = () => (
         Started my higher education and early career both in Accounting
         (still an active CPA in Virginia, US today),
         I later found true interest in Computer Science.
-        While working as a Revenue System Analyst at Google, I purpused
+        While working as a Revenue Systems Analyst at Google, I purpused
         another M.S. degree in CS, and continued my side CS projects.
         I&apos;m now ready to embark on a new journey to pursure a full-time
         Software Enginner position.

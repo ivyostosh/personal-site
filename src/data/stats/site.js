@@ -33,13 +33,19 @@ const data = [
   // },
   {
     key: 'live days',
-    label: 'live days',
+    label: 'Live days',
     value: <Age />,
   },
   {
-    label: 'Last updated at',
+    label: 'Last update',
     key: 'last updated at',
     value: '2021-07-11',
+  },
+  {
+    label: 'Credit to',
+    key: 'credit to',
+    value: "Michael D'Angelo",
+    link: 'https://github.com/mldangelo/personal-site',
   },
   {
     // TODO update this with a pre-commit hook
@@ -48,12 +54,6 @@ const data = [
     label: 'Lines of Javascript powering this website',
     value: '2115',
     // link: 'https://github.com/mldangelo/personal-site/graphs/contributors',
-  },
-  {
-    label: 'Credit to',
-    key: 'credit to',
-    value: "Michael D'Angelo",
-    link: 'https://github.com/mldangelo/personal-site',
   },
 ];
 
