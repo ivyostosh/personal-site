@@ -128,7 +128,7 @@ const skills = [
     category: ['Software Development'],
   },
   {
-    title: 'Build (Blaze)',
+    title: 'Build + Test (Bazel, Blaze)',
     competency: 3,
     category: ['Software Development'],
   },

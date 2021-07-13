@@ -23,13 +23,10 @@ const SideBar = () => (
         and optimizing processes.
       </p>
       <p>
-        Started my higher education and early career both in Accounting
-        (still an active CPA in Virginia, US today),
+        Started my college education and early career both in Accounting,
         I later found true interest in Computer Science.
-        While working as a Revenue Systems Analyst at Google, I purpused
-        another M.S. degree in CS, and continued my side CS projects.
-        I&apos;m now ready to embark on a new journey to pursure a full-time
-        Software Enginner position.
+        While working as a Revenue Systems Analyst at Google, I pursued
+        another degree in CS, and continued my side software projects.
       </p>
       <ul className="actions">
         <li>

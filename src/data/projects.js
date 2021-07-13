@@ -3,6 +3,7 @@ const data = [
   {
     title: 'Cat Momo with AR Momo',
     subtitle: 'Markerless Augmented Reality for cats',
+    link: 'https://drive.google.com/file/d/1YukyDtrLlHQSo2w7NP5U_l-mlXifJre2/view?usp=sharing',
     image: '/images/projects/cat_momo.jpg',
     date: '2021-03-14',
     desc:
@@ -11,13 +12,13 @@ const data = [
       + 'Algotiyhm powered by Python and OpenCV. ',
   },
   {
-    title: 'Stripe Payment Full Stack',
-    subtitle: 'Stripe Payment Full Stack',
-    image: '/images/projects/stripe_payment2.png',
+    title: 'Full Stack Stripe Payments',
+    subtitle: 'Full Stack Stripe Payments',
+    image: '/images/projects/stripe_payment.png',
     date: '2020-11-14',
     desc:
-      'A full stack service that enables Stripe payment services for a start-up. '
-      + 'Application implemented with JS / React frontend, and Golang backend. ',
+      'A full stack service that enables Stripe payment for a start-up from end to end. '
+      + 'Application implemented with JS / React front-end, and Golang back-end. ',
   },
   {
     title: 'Streaming Wars',
@@ -43,7 +44,7 @@ const data = [
     image: '/images/projects/simple_scrabble.jpg',
     date: '2019-10-18',
     desc:
-      'a single player Scrabble game with ability to personalize game settings, '
+      'A single player Scrabble game with ability to personalize game settings, '
       + ' and track game historical statistics. Application powered by Java and Android Studio.',
   },
   {

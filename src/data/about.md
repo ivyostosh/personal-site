@@ -1,28 +1,21 @@
 
 # Intro
 
-I was a bit slow to find out what I truly want to do for life. 25 years to be exact.
+I was a bit slow to find out what I truly want to do for life. 25 years to be exact.\
+\
 By that time, I have finished both my undergraduate and graduate education in Accounting,
 got my CPA license, and started to work at a CPA firm.
-Regardless, I made up my mind to pursue a career in Computer Science instead.\
+Regardless, I made up my mind to pursue a career in Computer Science instead.
+Why? I came to realize nothing else in my career beats the excitement of building a good piece of software,
+solving a hard problem, and optimizing a lengthy process.\
 \
-I was also a bit slow to act after making that decision.
-After all, besides dream, there's life and life always comes with a cost.
-So I kept my full-time Accounting job while continued on my transition.
-It took me 3 years to finish my CS degree, build up a new resume,
-and start to apply for a full-time Software Engineer position.\
-\
-Looking back, do I doubt myself and question my decisions?
-Sometimes, but that never stopped me and would never stop me.
-I believe in incremental changes, hard work, and doing things that you are truly passionate about.
-I don't have the sharpest CS skills you can find on the market,
-but I have the dedication, passion, and confidence to build a good piece of software.
+After making that decision, I took 3 years to finish my CS degree, sharpen skills through side projects, and build up a new resume.
+I'm now ready to embark on a new journey as a full-time Software Engineer.
 
 # Currently
 
 I currently work at Google as a Revenue Systems Analyst.
-My main work is to develop revenue infrastructure work for Google Ads incentives programs.
-I mainly use Google SQL, Plx Workflow, and Blaze BUILD for my work, but also find opportunities to do more work in Python, Pandas, Java and ML.
+My main work is to build revenue infrastructure work for Google Ads incentives programs.
 
 # Some facts and history
 
@@ -42,10 +35,13 @@ I mainly use Google SQL, Plx Workflow, and Blaze BUILD for my work, but also fin
 - Running in the early morning
 - Playing Guitar
 - Playing tennis
+- My cat Momo (although I regretted not naming him DAG after learning Graph)
+- German Shepherd (maybe I will name my dog DAG when I finally meet him / her)
 
 # Currently learning
 
-- NP
+- NP-complete
+- JS / React
 - Spanish
 
 # I dream of
