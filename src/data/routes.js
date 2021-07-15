@@ -1,4 +1,11 @@
+import Toggle from '../components/Themes/Toggler';
+
 const routes = [
+  {
+    index: true,
+    label: Toggle,
+    path: '/',
+  },
   {
     index: true,
     label: 'Ivy Jin',

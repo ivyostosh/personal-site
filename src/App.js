@@ -1,6 +1,11 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import Main from './layouts/Main'; // fallback for lazy pages
+import GlobalStyle from './components/Themes/GlobalStyle';
+import useDarkMode from './components/Themes/useDarkMode';
+import Toggle from './components/Themes/Toggler';
+import { lightTheme, darkTheme } from './components/Themes/Themes';
 import './static/css/main.scss'; // All of our styles
 
 const { PUBLIC_URL } = process.env;
@@ -16,20 +21,34 @@ const Projects = lazy(() => import('./pages/Projects'));
 const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 
-const App = () => (
-  <BrowserRouter basename={PUBLIC_URL}>
-    <Suspense fallback={<Main />}>
-      <Switch>
-        <Route exact path="/" component={Index} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/stats" component={Stats} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-        <Route component={NotFound} status={404} />
-      </Switch>
-    </Suspense>
-  </BrowserRouter>
-);
+const App = () => {
+  // const [theme, setTheme] = useState('light');
+  const [theme, themeToggler] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  return (
+
+    <BrowserRouter basename={PUBLIC_URL}>
+      <ThemeProvider theme={themeMode}>
+        <>
+          <GlobalStyle />
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+          <Suspense fallback={<Main />}>
+            <Switch>
+              <Route exact path="/" component={Index} />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/stats" component={Stats} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/resume" component={Resume} />
+              <Route component={NotFound} status={404} />
+            </Switch>
+          </Suspense>
+        </>
+      </ThemeProvider>
+    </BrowserRouter>
+  );
+};
 
 export default App;

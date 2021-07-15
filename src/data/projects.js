@@ -1,6 +1,16 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Full Stack Stripe Payments',
+    subtitle: 'Full Stack Stripe Payments',
+    link: 'https://ekkoiot.com/',
+    image: '/images/projects/ekko.png',
+    date: '2020-11-14',
+    desc:
+      'A full stack service that enables Stripe payment for a start-up from end to end. '
+      + 'Application implemented with JS / React front-end, and Golang back-end. ',
+  },
+  {
     title: 'Cat Momo with AR Momo',
     subtitle: 'Markerless Augmented Reality for cats',
     link: 'https://drive.google.com/file/d/1YukyDtrLlHQSo2w7NP5U_l-mlXifJre2/view?usp=sharing',
@@ -10,15 +20,6 @@ const data = [
       'A marker-less Augmented Reality (AR) algorithm that keeps AR Momo stable the entire time '
       + 'through camera rotations and real cat Momo movements. '
       + 'Algotiyhm powered by Python and OpenCV. ',
-  },
-  {
-    title: 'Full Stack Stripe Payments',
-    subtitle: 'Full Stack Stripe Payments',
-    image: '/images/projects/stripe_payment.png',
-    date: '2020-11-14',
-    desc:
-      'A full stack service that enables Stripe payment for a start-up from end to end. '
-      + 'Application implemented with JS / React front-end, and Golang back-end. ',
   },
   {
     title: 'Streaming Wars',
