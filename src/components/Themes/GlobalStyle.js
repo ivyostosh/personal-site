@@ -11,18 +11,6 @@ const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     transition: all 0.50s linear;
   }
-  // skill-button-container {
-  //   color: ${({ theme }) => theme.text};
-  // }
-  // skills {
-  //   color: ${({ theme }) => theme.text};
-  // }
-  // link-to {
-  //   color: ${({ theme }) => theme.text};
-  // }
-  // title {
-  //   color: ${({ theme }) => theme.text};
-  // }
   button {
     color: ${({ theme }) => theme.text};
   }
@@ -31,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
   }
   .skillbar-title {
      background:#eee;
+  }
+  .bm-menu {
+    background: ${({ theme }) => theme.body};
+    transition: all 0.50s linear;
   }
 `;
 
