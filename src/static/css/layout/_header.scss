@@ -182,7 +182,7 @@
 
 	/* General sidebar styles */
 	.bm-menu {
-	  background: _palette(bg);
+	//   background: _palette(bg);
 	  padding: 2.5em 1.5em 0;
 	  font-size: 1.15em;
 	}
@@ -224,8 +224,13 @@
 	border-left: 0;
 }
 
+.theme-icon-container  {
+	margin: 0 1em 0 auto;
+}
+
 .hamburger-container  {
 	display: none;
+	width: 40px;
 }
 
 @include breakpoint(medium) {

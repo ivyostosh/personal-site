@@ -1,11 +1,14 @@
-import React, { Suspense, lazy } from 'react';
+import React, {
+  Suspense, lazy, useContext, useEffect,
+} from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Main from './layouts/Main'; // fallback for lazy pages
+import { ThemeContext } from './components/Themes/ThemeContext';
 import GlobalStyle from './components/Themes/GlobalStyle';
-import useDarkMode from './components/Themes/useDarkMode';
-import Toggle from './components/Themes/Toggler';
-import { lightTheme, darkTheme } from './components/Themes/Themes';
+// import useDarkMode from './components/Themes/useDarkMode';
+// import Toggle from './components/Themes/Toggler';
+import { lightTheme, darkTheme } from './components/Themes/Theme';
 import './static/css/main.scss'; // All of our styles
 
 const { PUBLIC_URL } = process.env;
@@ -22,31 +25,43 @@ const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 
 const App = () => {
-  // const [theme, setTheme] = useState('light');
-  const [theme, themeToggler] = useDarkMode();
+  // const { theme } = useContext(ReferenceDataContext);
+  // const [theme, mountedComponent] = useDarkMode();
 
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const theme = useContext(ThemeContext);
+  const themeMode = theme.state.theme === 'light' ? lightTheme : darkTheme;
 
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('theme');
+    if (localTheme) {
+      theme.dispatch({ type: localTheme });
+    } else {
+      const initialTheme = 'light';
+      window.localStorage.setItem('theme', initialTheme);
+      theme.dispatch({ type: initialTheme });
+    }
+  }, []);
+
+  if (!theme.state.theme) return <div />;
   return (
-
     <BrowserRouter basename={PUBLIC_URL}>
+      {/* <ReferenceDataContextProvider> */}
       <ThemeProvider theme={themeMode}>
-        <>
-          <GlobalStyle />
-          <Toggle theme={theme} toggleTheme={themeToggler} />
-          <Suspense fallback={<Main />}>
-            <Switch>
-              <Route exact path="/" component={Index} />
-              <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/stats" component={Stats} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/resume" component={Resume} />
-              <Route component={NotFound} status={404} />
-            </Switch>
-          </Suspense>
-        </>
+        <GlobalStyle />
+        <Suspense fallback={<Main />}>
+          {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/stats" component={Stats} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/resume" component={Resume} />
+            <Route component={NotFound} status={404} />
+          </Switch>
+        </Suspense>
       </ThemeProvider>
+      {/* </ReferenceDataContextProvider> */}
     </BrowserRouter>
   );
 };

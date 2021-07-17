@@ -8,7 +8,7 @@
 
 	.post {
 		@include padding(_size(section-spacing), _size(section-spacing));
-		background: _palette(bg);
+		// background: _palette(bg);
 		border: solid 1px _palette(border);
 		margin: 0 0 _size(section-spacing) 0;
 		position: relative;
@@ -52,7 +52,7 @@
 				}
 
 				.published {
-					color: _palette(fg-bold);
+					// color: _palette(fg-bold);
 					display: block;
 					font-family: _font(family-heading);
 					font-size: 0.7em;

@@ -2,7 +2,7 @@ export const lightTheme = {
   body: '#FFF',
   text: '#646464',
   toggleBorder: '#FFF',
-  background: 'linear-gradient(#39598A, #79D7ED)',
+  // background: 'linear-gradient(#39598A, #79D7ED)',
 };
 
 export const darkTheme = {

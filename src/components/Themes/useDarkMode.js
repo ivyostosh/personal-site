@@ -11,8 +11,10 @@ const useDarkMode = () => {
   const themeToggler = () => {
     if (theme === 'light') {
       setTheme('dark');
+      setMode('dark');
     } else {
       setTheme('light');
+      setMode('light');
     }
   };
 

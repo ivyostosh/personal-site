@@ -7,7 +7,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: _palette(fg);
+		// color: _palette(fg);
 		font-family: _font(family);
 		font-size: 14pt;
 		font-weight: _font(weight);
@@ -54,7 +54,7 @@
 			color: _palette(accent) !important;
 
 			&:before {
-				color: _palette(accent) !important;
+				// color: _palette(accent) !important;
 			}
 		}
 	}
@@ -73,7 +73,7 @@
 	}
 
 	h1, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		// color: _palette(fg-bold);
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading-bold);
 		letter-spacing: _font(kerning-heading);
@@ -141,7 +141,7 @@
 	}
 
 	code {
-		background: _palette(border-bg);
+		// background: _palette(border-bg);
 		border: solid 1px _palette(border);
 		font-family: _font(family-fixed);
 		font-size: 0.9em;
