@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+// import styled from 'styled-components';
 
 // import axios from 'axios';
 // import { ThemeProvider } from 'styled-components';
@@ -15,6 +16,10 @@ import { ThemeContext } from '../Themes/ThemeContext';
 // export const [theme, themeToggler] = {
 //   useDarkMode()
 // };
+
+// const HeaderContainer = styled.header`
+//   background: ${(props) => props.theme.myColor};
+// `;
 
 // Websites Navbar, displays routes defined in 'src/data/routes'
 const Navigation = () => {
@@ -46,6 +51,7 @@ const Navigation = () => {
   // const themeMode = theme === 'light' ? lightTheme : darkTheme;
   return (
     <header id="header">
+      {/* <HeaderContainer> */}
       <h1 className="index-link">
         {routes.filter((l) => l.index).map((l) => (
           <Link key={l.label} to={l.path}>{l.label}</Link>
@@ -65,6 +71,7 @@ const Navigation = () => {
       <div className="theme-icon-container"><Toggle theme={theme.state.theme} toggleTheme={onClick} /></div>
       {/* </ThemeProvider> */}
       <Hamburger />
+      {/* </HeaderContainer> */}
     </header>
   );
 };

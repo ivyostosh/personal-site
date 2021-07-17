@@ -51,7 +51,7 @@
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent) !important;
+			// color: _palette(accent) !important;
 
 			&:before {
 				// color: _palette(accent) !important;
@@ -60,7 +60,7 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		// color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 	}
 

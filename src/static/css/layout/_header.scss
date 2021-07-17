@@ -13,7 +13,7 @@
 	#header {
 		@include vendor('display', 'flex');
 		@include vendor('justify-content', 'space-between');
-		background-color: _palette(bg);
+		// background-color: _palette(bg);
 		border-bottom: solid 1px _palette(border);
 		height: 3.5em;
 		left: 0;
@@ -116,7 +116,7 @@
 					> a {
 						@include icon;
 						border-bottom: 0;
-						color: _palette(fg-light);
+						// color: _palette(fg-light);
 						overflow: hidden;
 						position: relative;
 						text-indent: 4em;
@@ -182,14 +182,14 @@
 
 	/* General sidebar styles */
 	.bm-menu {
-	//   background: _palette(bg);
+	  background: _palette(bg);
 	  padding: 2.5em 1.5em 0;
 	  font-size: 1.15em;
 	}
 
 	/* Wrapper for item list */
 	.bm-item-list {
-	  color: _palette(fg-bold);
+	//   color: _palette(fg-bold);
 	  padding: 0.8em;
 		font-family: "Raleway", Helvetica, sans-serif;
 	}
@@ -225,7 +225,7 @@
 }
 
 .theme-icon-container  {
-	margin: 0 1em 0 auto;
+	margin: 0.2em 0.1em auto auto;
 }
 
 .hamburger-container  {
