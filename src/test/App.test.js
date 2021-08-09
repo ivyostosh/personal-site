@@ -12,7 +12,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Index from '../pages/Index';
 import NotFound from '../pages/NotFound';
-import Projects from '../pages/Projects';
+import Projects from '../pages/ProjectList';
 import Resume from '../pages/Resume';
 import Stats from '../pages/Stats';
 
