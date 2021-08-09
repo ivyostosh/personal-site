@@ -39,13 +39,7 @@ const data = [
   {
     label: 'Last update',
     key: 'last updated at',
-    value: '2021-07-11',
-  },
-  {
-    label: 'Credit to',
-    key: 'credit to',
-    value: "Michael D'Angelo",
-    link: 'https://github.com/mldangelo/personal-site',
+    value: '2021-08-14',
   },
   // {
   //   // TODO update this with a pre-commit hook

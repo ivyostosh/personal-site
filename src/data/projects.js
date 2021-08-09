@@ -1,13 +1,13 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Full Stack Stripe Payments',
+    title: 'Ekko IoT Subscription',
     subtitle: 'Full Stack Stripe Payments',
     link: 'https://ekkoiot.com/',
     image: '/images/projects/ekko.png',
-    date: '2020-11-14',
+    date: '2021-06-14',
     desc:
-      'A full stack service that enables Stripe payment for a start-up from end to end. '
+      'An integrated Stripe payment and subscription model into company\'s SaaS offering. '
       + 'Application implemented with JS / React front-end, and Golang back-end. ',
   },
   {
@@ -19,12 +19,12 @@ const data = [
     desc:
       'A marker-less Augmented Reality (AR) algorithm that keeps AR Momo stable the entire time '
       + 'through camera rotations and real cat Momo movements. '
-      + 'Algotiyhm powered by Python and OpenCV. ',
+      + 'Algorithm powered by Python and OpenCV. ',
   },
   {
     title: 'Streaming Wars',
     subtitle: 'Streaming Wars',
-    image: '/images/projects/streaming_war.jpg',
+    image: '/images/projects/streaming_wars.jpeg',
     date: '2020-10-14',
     desc:
       'A Java application that enable multiple users to read and write from the same database, config settings, authenticate identities, '
