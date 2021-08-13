@@ -15,6 +15,7 @@ const { PUBLIC_URL } = process.env;
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
 const About = lazy(() => import('./pages/About'));
+const BlogList = lazy(() => import('./pages/BlogList'));
 const Blog = lazy(() => import('./pages/Blog'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
@@ -48,7 +49,8 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route path="/about" component={About} />
-            <Route path="/blog" component={Blog} />
+            <Route exact path="/blog" component={BlogList} />
+            <Route path="/blog/:name" component={Blog} />
             <Route path="/resume" component={Resume} />
             <Route exact path="/projects" component={ProjectList} />
             <Route path="/projects/:name" component={Project} />

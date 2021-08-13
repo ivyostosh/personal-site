@@ -1,5 +1,6 @@
 import React from 'react';
-import articles from '../data/project/article';
+import dayjs from 'dayjs';
+import articles from '../data/projects';
 
 import Main from '../layouts/Main';
 
@@ -12,6 +13,9 @@ const ArticlePage = ({ match }) => {
 
       <Main>
         <h1>{matchingArticle.title}</h1>
+        <time className="published">{dayjs(matchingArticle.date).format('MMMM, YYYY')}</time>
+        <br />
+        <br />
         {matchingArticle.content.map((paragraph) => <p key={matchingArticle.title}>{paragraph}</p>)}
       </Main>
     ) : (

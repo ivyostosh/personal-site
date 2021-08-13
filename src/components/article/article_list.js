@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import dayjs from 'dayjs';
 
 const ArticlesList = ({ articles }) => (
-  <>
-    {articles.map((article) => (
-      <Link className="article-list-item" to={`/projects/${article.name}`} key={article.title}>
-        <h3>{article.title}</h3>
-        <p>{article.content[0].substring(0, 150)}...</p>
-      </Link>
-    ))}
-  </>
+  <div className="cell-container">
+    <article className="posts">
+      {articles.map((article) => (
+        <Link className="article-list-item" to={`/blog/${article.name}`} key={article.title}>
+          <header>
+            <h3>{article.title}</h3>
+            <time className="published">{dayjs(article.date).format('MMMM, YYYY')}</time>
+          </header>
+          <br />
+          <p>{article.desc}</p>
+        </Link>
+      ))}
+    </article>
+  </div>
 );
 
 export default ArticlesList;

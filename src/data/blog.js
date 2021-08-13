@@ -1,25 +1,33 @@
+/* eslint-disable max-len */
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Ekko IoT Subscription',
-    subtitle: 'Full Stack Stripe Payments',
-    link: 'https://ekkoiot.com/',
-    image: '/images/projects/ekko.png',
-    date: '2021-06-14',
+    name: 'why_cs',
+    title: 'Why do I like Computer Science?',
+    subtitle: 'One question I often ask myself',
+    date: '2021-08-10',
     desc:
-        'An integrated Stripe payment and subscription model into company\'s SaaS offering. '
-        + 'Application implemented with JS / React front-end, and Golang back-end. ',
+        'I originally wanted to answer the question "Why do I want to be a Software Engineer" first, but I believe this is a more fundamental question that I should start with ... ',
+    content: [
+      'This is a question I\'ve asked myself many times over the years. I haven\'t found an answer I\'m fully content with till this day. '
+      + 'So I will take a similar approach of how we approximate ILP solution using LP. I will try my best to articulate all the reasons I can think of. '
+      + 'Hopefully the day where P=NP will come soon, and everything will just naturally make perfect sense.',
+    ],
   },
   {
-    title: 'Cat Momo with AR Momo',
-    subtitle: 'Markerless Augmented Reality for cats',
-    link: 'https://drive.google.com/file/d/1YukyDtrLlHQSo2w7NP5U_l-mlXifJre2/view?usp=sharing',
-    image: '/images/projects/cat_momo.jpg',
-    date: '2021-03-14',
+    name: 'why_swe',
+    title: 'Why do I want to be a Software Engineer?',
+    subtitle: 'One question I often ask myself',
+    date: '2021-08-10',
     desc:
-        'A marker-less Augmented Reality (AR) algorithm that keeps AR Momo stable the entire time '
-        + 'through camera rotations and real cat Momo movements. '
-        + 'Algorithm powered by Python and OpenCV. ',
+        'This is a question I\'ve asked myself many times over the years. I haven\'t found an answer I\'m fully content with till this day. '
+        + 'So I will take a similar approach of how we approximate ILP solution using LP. I will try my best to articulate all the reasons I can think of. '
+        + 'Hopefully the day where P=NP will come soon, and everything will just naturally make perfect sense ... ',
+    content: [
+      'This is a question I\'ve asked myself many times over the years. I haven\'t found an answer I\'m fully content with till this day. '
+      + 'So I will take a similar approach of how we approximate ILP solution using LP. I will try my best to articulate all the reasons I can think of. '
+      + 'Hopefully the day where P=NP will come soon, and everything will just naturally make perfect sense.',
+    ],
   },
 ];
 export default data;
