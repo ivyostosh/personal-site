@@ -3,19 +3,18 @@
 
 I was a bit slow to find out what I truly want to do for life. 25 years to be exact.\
 \
-By that time, I have finished both my undergraduate and graduate education in Accounting,
+By that time, I have finished my undergraduate and graduate education in accounting,
 got my CPA license, and started to work at a CPA firm.
 Regardless, I made up my mind to pursue a career in Data Engineering instead.
 Why? I came to realize nothing else in my career beats the excitement of building a good piece of software,
 solving a hard problem, and optimizing a lengthy process.\
 \
-After making that decision, I took three years to finish my Computer Science degree, sharpen skills through side projects, and build a new resume.
-I'm now ready to embark on a new journey as a full-time Data Engineer.
+After making that decision, it took me a little over three years to finish my M.S. in Computer Science degree, sharpen skills through side projects, and build up a new resume.
+I'm now ready to embark on a new journey as a full-time Software Engineer.
 
 # Currently
 
-I currently work at Google as a Data Analyst.
-My main work is to build revenue infrastructure work for Google Ads incentives programs.
+I currently work at Google as a Data Analyst responsible for building Python and SQL based data pipelines to support the Google Ads incentives programs.
 
 # Some facts and history
 
@@ -41,13 +40,14 @@ My main work is to build revenue infrastructure work for Google Ads incentives p
 
 # Currently learning
 
-- JS / React
+- JavaScript / React
 - Spanish
 
 # I dream of
 
-- finishing my CS degree
-- changing the world
-- making something incredible that can change the world
-- making something incredible that can change some part of the world
-- making something incredible that can benefit some people
+- <del>Finishing my Computer Science degree</del> DONE!!!
+- Becoming a full-time Software Engineer
+- Changing the world
+- Making something incredible that can change the world
+- Making something incredible that can change some part of the world
+- Making something incredible that can benefit some people

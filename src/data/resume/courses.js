@@ -42,6 +42,12 @@ const courses = [
     university: 'Georgia Tech',
   },
   {
+    title: 'AI, Ethics, and Society',
+    number: 'CS 6603',
+    link: 'https://omscs.gatech.edu/cs-8803-o10-ai-ethics-and-society',
+    university: 'Georgia Tech',
+  },
+  {
     title: 'Machine Learning',
     number: 'CS 7641',
     link: 'https://omscs.gatech.edu/cs-7641-machine-learning',
