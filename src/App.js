@@ -15,13 +15,13 @@ const { PUBLIC_URL } = process.env;
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
 const About = lazy(() => import('./pages/About'));
-const BlogList = lazy(() => import('./pages/BlogList'));
-const Blog = lazy(() => import('./pages/Blog'));
+// const BlogList = lazy(() => import('./pages/BlogList'));
+// const Blog = lazy(() => import('./pages/Blog'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const ProjectList = lazy(() => import('./pages/ProjectList'));
-const Project = lazy(() => import('./pages/Project'));
+// const Project = lazy(() => import('./pages/Project'));
 const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 
@@ -49,11 +49,11 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route path="/about" component={About} />
-            <Route exact path="/blog" component={BlogList} />
-            <Route path="/blog/:name" component={Blog} />
+            {/* <Route exact path="/blog" component={BlogList} />
+            <Route path="/blog/:name" component={Blog} /> */}
             <Route path="/resume" component={Resume} />
             <Route exact path="/projects" component={ProjectList} />
-            <Route path="/projects/:name" component={Project} />
+            {/* <Route path="/projects/:name" component={Project} /> */}
             <Route path="/stats" component={Stats} />
             <Route path="/contact" component={Contact} />
             <Route component={NotFound} status={404} />

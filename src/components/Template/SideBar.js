@@ -23,10 +23,10 @@ const SideBar = () => (
         and optimizing processes.
       </p>
       <p>
-        Started my college education and early career both in Accounting,
-        I later found true interest in Computer Science.
-        While working as a Revenue Systems Analyst at Google, I pursued
-        another degree in CS, and continued my side software projects.
+        Started my college education and early career in Accounting,
+        I later found true interest in Computer Science / Data Engineering.
+        While working as a Data Analyst at Google, I pursued
+        a master&apos;s degree in Computer Science, and continued my side software projects.
       </p>
       <ul className="actions">
         <li>
@@ -37,7 +37,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Ivy Jin <Link to="/">ivyostosh.com</Link>.</p>
+      <p className="copyright">&copy; Ivy Jin <Link to="/">ivyjin.me</Link>.</p>
     </section>
   </section>
 );

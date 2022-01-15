@@ -5,16 +5,16 @@ I was a bit slow to find out what I truly want to do for life. 25 years to be ex
 \
 By that time, I have finished both my undergraduate and graduate education in Accounting,
 got my CPA license, and started to work at a CPA firm.
-Regardless, I made up my mind to pursue a career in Computer Science instead.
+Regardless, I made up my mind to pursue a career in Data Engineering instead.
 Why? I came to realize nothing else in my career beats the excitement of building a good piece of software,
 solving a hard problem, and optimizing a lengthy process.\
 \
-After making that decision, I took 3 years to finish my CS degree, sharpen skills through side projects, and build up a new resume.
-I'm now ready to embark on a new journey as a full-time Software Engineer.
+After making that decision, I took three years to finish my Computer Science degree, sharpen skills through side projects, and build a new resume.
+I'm now ready to embark on a new journey as a full-time Data Engineer.
 
 # Currently
 
-I currently work at Google as a Revenue Systems Analyst.
+I currently work at Google as a Data Analyst.
 My main work is to build revenue infrastructure work for Google Ads incentives programs.
 
 # Some facts and history
@@ -28,6 +28,7 @@ My main work is to build revenue infrastructure work for Google Ads incentives p
 # I like
 
 - Computer Science
+- Data Science
 - Code that runs
 - Directory that has a README file
 - Solving problems
@@ -40,7 +41,6 @@ My main work is to build revenue infrastructure work for Google Ads incentives p
 
 # Currently learning
 
-- NP-complete
 - JS / React
 - Spanish
 

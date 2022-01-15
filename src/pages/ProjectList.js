@@ -15,16 +15,16 @@ const ArticlesListPage = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
-          <p>Click on the project images to learn more ...</p>
+          {/* <p>Click on the project images to learn more ...</p> */}
         </div>
       </header>
       {data.map((project) => (
-        <Link className="article-list-item" to={`/projects/${project.name}`} key={project.title}>
-          <Cell
-            data={project}
-            key={project.title}
-          />
-        </Link>
+        // <Link className="article-list-item" to={`/projects/${project.name}`} key={project.title}>
+        <Cell
+          data={project}
+          key={project.title}
+        />
+        // </Link>
       ))}
     </article>
   </Main>

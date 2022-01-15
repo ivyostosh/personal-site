@@ -3,32 +3,37 @@
 
 const skills = [
   {
+    title: 'SQL',
+    competency: 5,
+    category: ['Languages'],
+  },
+  {
     title: 'Python',
     competency: 5,
     category: ['Languages'],
   },
   {
+    title: 'JavaScript',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
     title: 'Java',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
+    title: 'HTML/CSS',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
+    title: 'Plx (Script, Workflow, Table, Dashboard)',
     competency: 4,
-    category: ['Languages'],
+    category: ['Data Engineering'],
   },
   {
-    title: 'C++',
-    competency: 2,
-    category: ['Languages'],
-  },
-  {
-    title: 'Go',
-    competency: 3,
-    category: ['Languages'],
-  },
-  {
-    title: 'VB',
-    competency: 3,
-    category: ['Languages'],
-  },
-  {
-    title: 'Numpy + Pandas',
+    title: 'NumPy',
     competency: 4,
     category: ['Data Engineering'],
   },
@@ -38,79 +43,29 @@ const skills = [
     category: ['Data Engineering'],
   },
   {
-    title: 'Tensorflow + Keras',
-    competency: 2,
-    category: ['Data Engineering'],
-  },
-  {
-    title: 'Jupyter',
+    title: 'Pandas',
     competency: 3,
     category: ['Data Engineering'],
   },
   {
-    title: 'Data Analsis + Visualization',
+    title: 'Communication',
     competency: 5,
-    category: ['Data Engineering'],
+    category: ['Project Management'],
   },
   {
-    title: 'Javascript',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
+    title: 'Critical Thinking',
+    competency: 5,
+    category: ['Project Management'],
   },
   {
-    title: 'Node.JS',
-    competency: 2,
-    category: ['Web Development'],
-  },
-  {
-    title: 'React',
-    competency: 3,
-    category: ['Web Development'],
-  },
-  {
-    title: 'HTML + SASS/SCSS/CSS',
-    competency: 2,
-    category: ['Web Development', 'Languages'],
-  },
-  {
-    title: 'SQL (GoogleSQL, MySQL)',
+    title: 'Leadership',
     competency: 4,
-    category: ['Data Engineering', 'Languages'],
+    category: ['Project Management'],
   },
   {
-    title: 'Redis',
-    competency: 2,
-    category: ['Data Engineering', 'Web Development'],
-  },
-  {
-    title: 'Shell (Bash)',
-    competency: 3,
-    category: ['Tools'],
-  },
-  {
-    title: 'Amazon Web Services',
-    competency: 2,
-    category: ['Tools', 'Web Development'],
-  },
-  {
-    title: 'Pylint',
-    competency: 2,
-    category: ['Tools'],
-  },
-  {
-    title: 'Golint',
-    competency: 2,
-    category: ['Tools'],
-  },
-  {
-    title: 'Git (Github)',
-    competency: 3,
-    category: ['Tools'],
-  },
-  {
-    title: 'Postman',
-    competency: 3,
-    category: ['Tools'],
+    title: 'Cider',
+    competency: 4,
+    category: ['Software Development'],
   },
   {
     title: 'Data Structure + Algorithms',
@@ -118,19 +73,54 @@ const skills = [
     category: ['Software Development'],
   },
   {
-    title: 'IDEs (VSCode, IntelliJIDEA, Android Studio)',
+    title: 'Blaze',
+    competency: 4,
+    category: ['Software Development'],
+  },
+  {
+    title: 'Android Studio',
     competency: 3,
     category: ['Software Development'],
   },
   {
-    title: 'Container (Docker)',
+    title: 'Visual Studio Code',
+    competency: 3,
+    category: ['Software Development'],
+  },
+  {
+    title: 'React',
+    competency: 3,
+    category: ['Software Development'],
+  },
+  {
+    title: 'Postman',
     competency: 2,
     category: ['Software Development'],
   },
   {
-    title: 'Build + Test (Bazel, Blaze)',
+    title: 'Critique',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Piper',
+    competency: 4,
+    category: ['Tools'],
+  },
+  {
+    title: 'Shell (Bash)',
     competency: 3,
-    category: ['Software Development'],
+    category: ['Tools'],
+  },
+  {
+    title: 'GitHub',
+    competency: 3,
+    category: ['Tools'],
+  },
+  {
+    title: 'Amazon Web Services',
+    competency: 2,
+    category: ['Tools'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 

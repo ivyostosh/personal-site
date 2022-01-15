@@ -21,7 +21,7 @@ const data = [
   {
     key: 'real languages',
     label: 'Real Languages',
-    value: 'Python, Java, JavaScript, SQL',
+    value: 'Python, JavaScript, SQL',
   },
   {
     key: 'national parks',

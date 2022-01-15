@@ -45,7 +45,6 @@ const ArticlePage = ({ match }) => {
             }}
             escapeHtml={false}
           />
-          {matchArticle.content.map((paragraph) => <p key={matchArticle.title}>{paragraph}</p>)}
         </article>
       </Main>
     ) : (
