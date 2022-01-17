@@ -5,7 +5,7 @@ I was a bit slow to find out what I truly want to do for life. 25 years to be ex
 \
 By that time, I have finished my undergraduate and graduate education in accounting,
 got my CPA license, and started to work at a CPA firm.
-Regardless, I made up my mind to pursue a career in Data Engineering instead.
+Regardless, I made up my mind to pursue a career in Software Engineering instead.
 Why? I came to realize nothing else in my career beats the excitement of building a good piece of software,
 solving a hard problem, and optimizing a lengthy process.\
 \
@@ -27,7 +27,6 @@ I currently work at Google as a Data Analyst responsible for building Python and
 # I like
 
 - Computer Science
-- Data Science
 - Code that runs
 - Directory that has a README file
 - Solving problems

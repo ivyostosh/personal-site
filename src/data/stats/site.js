@@ -39,7 +39,7 @@ const data = [
   {
     label: 'Last update',
     key: 'last updated at',
-    value: '2021-08-14',
+    value: '2022-01-15',
   },
   // {
   //   // TODO update this with a pre-commit hook

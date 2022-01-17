@@ -3,7 +3,7 @@ const data = [
     name: 'ekko',
     title: 'Ekko IoT Subscription',
     subtitle: 'Full Stack Stripe Payments',
-    // link: 'https://ekkoiot.com/',
+    link: 'https://ekkoiot.com/',
     image: '/images/projects/ekko.png',
     date: '2021-08-01',
     desc:
